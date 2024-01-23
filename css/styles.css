@@ -125,9 +125,17 @@ footer {
 }
 
 .agrandar-tamaño-txt-carousel {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: rgb(255, 255, 255);
+}
+
+.caja-txt-carousel {
+    background-color: rgba(0, 128, 0, 0.397);
+}
+
+.color-slider {
+    color: black;
 }
 
 .sobre-este-curso {
