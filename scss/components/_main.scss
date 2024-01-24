@@ -1,7 +1,9 @@
+body {
+    background-color: #d0dae4
+}
+
 main {
     margin-top: 130px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 
@@ -9,11 +11,24 @@ main {
     z-index: -1;
 }
 
-.encabezado-main-index {
+.video-main-index {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100vh;
+  }
+
+.caja-encabezado {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
 }
 
 

@@ -1,11 +1,14 @@
 @import "./components/header";
-@import "./components/main";
 @import "./components/footer";
+@import "./components/main";
 
 * {
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    width: 100%;
+}
 
 @media only screen and (min-width: 500px) {
     iframe {
