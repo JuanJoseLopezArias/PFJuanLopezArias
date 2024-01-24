@@ -84,6 +84,17 @@ main {
 
 .caja-carousel {
   z-index: -1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.274);
+  padding: 20px 0px;
+}
+.caja-carousel .carousel-border {
+  border: 3px solid black;
+}
+.caja-carousel p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
 }
 
 .video-main-index {
@@ -101,8 +112,6 @@ main {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
 .producto-index-1,
@@ -119,16 +128,6 @@ main {
   width: 328px;
   height: 357px;
   justify-content: center;
-}
-
-.titulo-producto-index {
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(128, 128, 128);
-  margin: 10px;
-  border: 5px solid rgb(153, 205, 50);
 }
 
 .caja-producto-index {
@@ -414,7 +413,7 @@ body {
 }
 @media only screen and (min-width: 900px) {
   .caja-carousel {
-    padding: 0px 150px;
+    padding: 30px 150px;
   }
   .caja2-footer {
     width: auto;
