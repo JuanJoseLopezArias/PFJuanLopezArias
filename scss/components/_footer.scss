@@ -1,0 +1,54 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 3px solid rgb(0, 0, 0);
+    padding-top: 30px;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.txt-footer {
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.img-logosredes {
+    width: 4rem;
+}
+
+.img-logosredes:hover {
+    width: 4.5rem;
+}
+
+.caja-redessociales {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.caja1-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.caja2-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 232px;
+}
+
+.caja3-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+iframe {
+    width: 250px;
+    height: 150px;
+}
