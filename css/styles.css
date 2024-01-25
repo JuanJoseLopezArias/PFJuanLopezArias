@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 header {
   background-color: #9bcfb8;
   border: 1px solid rgb(0, 0, 0);
@@ -13,6 +17,10 @@ header .logo {
 }
 header .tamaño-dropdown {
   font-size: 0.8rem;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 footer {
@@ -74,6 +82,26 @@ iframe {
   width: 6rem;
 }
 
+@media only screen and (min-width: 500px) {
+  iframe {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .caja2-footer {
+    width: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background-color: #d0dae4;
 }
@@ -83,18 +111,25 @@ main {
 }
 
 .caja-carousel {
+  margin-bottom: 40px;
   z-index: -1;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.274);
   padding: 20px 0px;
 }
+.caja-carousel .encabezado-carousel {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
 .caja-carousel .carousel-border {
   border: 3px solid black;
 }
-.caja-carousel p {
+.caja-carousel .caja-txt-carousel {
+  height: 117px;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .video-main-index {
@@ -114,14 +149,45 @@ main {
   width: 100%;
 }
 
-.zigzag1 {
+.zigzag {
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+  align-items: center;
 }
-.zigzag1 .caja-img-zigzag1 img {
-  width: 700px;
+.zigzag .caja-texto-zigzag1 {
+  height: 50%;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.zigzag .caja-texto-zigzag2 {
+  color: green;
+}
+.zigzag .caja-texto-zigzag3 {
+  color: black;
+}
+.zigzag .caja-img-zigzag1 {
+  display: flex;
+  width: 100%;
+}
+.zigzag .caja-img-zigzag1 img {
+  margin: 10px 0px;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 60%;
+  border: 10px solid black;
+}
+
+.zigzag2 {
+  background-color: rgba(128, 128, 128, 0.75);
+}
+
+.zigzag3 {
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .producto-index-1,
@@ -376,18 +442,7 @@ main {
   width: 100%;
 }
 
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  width: 100%;
-}
-
 @media only screen and (min-width: 500px) {
-  iframe {
-    width: 400px;
-  }
   .caja-contenido-cursos {
     display: flex;
     flex-direction: column;
@@ -421,18 +476,24 @@ body {
     width: 450px;
   }
 }
+@media only screen and (min-width: 700px) {
+  .zigzag {
+    flex-direction: row;
+  }
+  .zigzag .caja-texto-zigzag1 {
+    width: 50%;
+    padding: 0px 50px;
+  }
+  .zigzag .caja-img-zigzag1 {
+    width: 50%;
+  }
+  .zigzag2 {
+    flex-direction: row-reverse;
+  }
+}
 @media only screen and (min-width: 900px) {
   .caja-carousel {
     padding: 30px 150px;
-  }
-  .caja2-footer {
-    width: auto;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
   .img-presentacion-curso1 {
     width: 900px;

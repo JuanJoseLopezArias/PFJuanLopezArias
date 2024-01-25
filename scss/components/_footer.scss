@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -55,4 +59,24 @@ iframe {
 
 .logo {
     width: 6rem;
+}
+
+@media only screen and (min-width: 500px) {
+    iframe {
+        width: 400px;
+
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .caja2-footer {
+        width: auto;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
 }
