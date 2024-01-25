@@ -91,47 +91,6 @@ main {
 
 }
 
-.producto-index-1,
-.producto-index-2,
-.producto-index-3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgb(245, 245, 220);
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    align-items: center;
-    width: 328px;
-    height: 357px;
-    justify-content: center;
-}
-
-.caja-producto-index {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
-.info-producto-index {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-.img-producto-index {
-    width: 14rem;
-    border: 1px solid rgb(0, 0, 0);
-
-}
-
 .caja-presentacion-curso1 {
     position: relative;
     display: flex;
