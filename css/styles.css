@@ -114,6 +114,16 @@ main {
   width: 100%;
 }
 
+.zigzag1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.zigzag1 .caja-img-zigzag1 img {
+  width: 700px;
+}
+
 .producto-index-1,
 .producto-index-2,
 .producto-index-3 {
