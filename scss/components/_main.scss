@@ -10,18 +10,15 @@ main {
     margin-top: 110px;
 }
 
+.container-main {
+    background-color:nth($coloresMadera, 3);
+}
 
 .caja-carousel {
     margin-bottom: 40px;
     z-index: -1;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.274);
-    padding: 20px 0px;
-    .encabezado-carousel {
-        font-size: 1.5rem;
-        text-align: center;
-        color: white;
-    }
     .carousel-border {
         border: 3px solid black;
     }
@@ -29,7 +26,7 @@ main {
         height: 117px;
         text-align: center;
         color: rgb(255, 255, 255);
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -64,7 +61,7 @@ main {
         color: black;
         padding: 0px 20px;
         .fondo-txt-card-zigzag {
-            background-color:  #dddd95ab;
+            background-color: rgb(255, 255, 255);
             border-radius: 10%;
             font-size: 1.2rem;
             &:hover {
@@ -72,6 +69,9 @@ main {
             }
             h2 {
                 margin: 20px;
+            }
+            p {
+                padding: 0px 10px;
             }
         }
     }
@@ -83,7 +83,6 @@ main {
             margin: 10px 0px;
             min-width: 100%;
             min-height: 100%;
-            border-radius: 60%;
             border: 10px solid black;
             
         }
@@ -373,17 +372,13 @@ main {
 
 @media only screen and (min-width: 900px) {
 
+    .container-main {
+        margin: 0px 60px;
+    }
+
     .caja-encabezado {
         padding: 50px 150px;
         font-size: 1.3rem;   
-    }
-   
-    .caja-carousel {
-        padding: 30px 150px;
-    }
-
-    .zigzag {
-        margin: 0px 100px;
     }
 
     .img-presentacion-curso1 {
