@@ -23,16 +23,12 @@ header .tamaño-dropdown {
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: white;
-}
-
 main {
   margin-top: 110px;
 }
 
-.container-main {
-  background-color: #808000;
+.caja-zigzag {
+  background-color: rgb(255, 255, 255);
 }
 
 .caja-carousel {
@@ -48,14 +44,14 @@ main {
   height: 117px;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .video-main-index {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 .caja-encabezado {
@@ -73,23 +69,19 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  text-align: center;
 }
 .zigzag .caja-texto-zigzag1 {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   color: black;
   padding: 0px 20px;
 }
 .zigzag .caja-texto-zigzag1 .fondo-txt-card-zigzag {
-  background-color: rgb(255, 255, 255);
+  background-color: #e0ccab;
   border-radius: 10%;
   font-size: 1.2rem;
 }
 .zigzag .caja-texto-zigzag1 .fondo-txt-card-zigzag:hover {
-  box-shadow: 0px 0px 31px 0px #a6c732;
+  box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
 }
 .zigzag .caja-texto-zigzag1 .fondo-txt-card-zigzag h2 {
   margin: 20px;
@@ -106,7 +98,21 @@ main {
   margin: 10px 0px;
   min-width: 100%;
   min-height: 100%;
-  border: 10px solid black;
+  border: 3px solid black;
+}
+
+.caja-iframe {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 65px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+}
+.caja-iframe iframe {
+  width: 100%;
+  padding: 10px;
 }
 
 .caja-presentacion-curso1 {
@@ -379,6 +385,9 @@ main {
     padding: 50px 150px;
     font-size: 1.3rem;
   }
+  .caja-iframe iframe {
+    width: 33%;
+  }
   .img-presentacion-curso1 {
     width: 900px;
     height: 500px;
@@ -421,72 +430,40 @@ main {
 }
 
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  border-top: 3px solid rgb(0, 0, 0);
-  padding-top: 30px;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.txt-footer {
-  text-align: center;
-  font-size: 1.1rem;
-  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.164);
+  margin-top: 20px;
 }
 
 .img-logosredes {
   width: 4rem;
+  border-radius: 100%;
 }
 
-.img-logosredes:hover {
-  width: 4.5rem;
-}
-
-.caja-redessociales {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 15px;
-}
-
-.caja1-footer {
+.footer-row {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
-.caja2-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 232px;
-}
-
-.caja3-footer {
-  display: flex;
-  flex-direction: row;
-}
-
-iframe {
-  width: 250px;
-  height: 150px;
-}
-
-.logo {
-  width: 6rem;
+.cajafooter {
+  padding: 10px 30px;
 }
 
 @media only screen and (min-width: 500px) {
   iframe {
     width: 400px;
   }
+  .cajafooter {
+    width: 33.33%;
+  }
+  .footer-row {
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 900px) {
-  .caja2-footer {
-    width: auto;
+  .container-footer {
+    margin: 0px 60px;
+    width: 100%;
   }
   footer {
     display: flex;
