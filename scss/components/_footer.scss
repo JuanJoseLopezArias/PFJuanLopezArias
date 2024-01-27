@@ -3,9 +3,10 @@
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.164);
+    background-color: nth($coloresMadera, 10);
     margin-top: 20px;
 }
+
 .img-logosredes {
     width: 4rem;
     border-radius: 100%;
@@ -14,20 +15,25 @@ footer {
 .footer-row {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .cajafooter {
+        padding: 10px 30px;
+        width: 100%;
+    }
 }
 
-.cajafooter {
-    padding: 10px 30px;
+.logo {
+    width: 7rem;
 }
+
 @media only screen and (min-width: 500px) {
     iframe {
         width: 400px;
 
-    }
-
-    .cajafooter {
-        width: 33.33%;
     }
 
     .footer-row {
@@ -35,18 +41,18 @@ footer {
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 812px) {
 
-    .container-footer {
-        margin: 0px 60px;
+    .footer-row {
         width: 100%;
-    }
-    
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
 
+        .cajafooter {
+            width: 33%;
+        }
     }
+}
+
+
+@media only screen and (min-width: 900px) {
+    
 }
