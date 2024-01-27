@@ -1,0 +1,113 @@
+.h-cursos,
+.h-inst {
+    color: #000069;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.caja-inst-foto-principal {
+    background-color: rgb(245, 245, 220);
+    display: flex;
+    justify-content: center;
+}
+
+.inst-foto-principal {
+    width: 280px;
+    height: 192px;
+}
+
+.caja1-inst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.caja12-inst,
+.caja13-inst {
+    padding: 0px 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.caja2-inst {
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+}
+
+.caja3-inst {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+}
+
+.caja31-inst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja32-inst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul-que-ofrecemos {
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+
+.img-que-ofrecemos {
+    width: 10rem;
+    margin: 10px 0px;
+}
+
+@media only screen and (min-width: 500px) {
+    .caja31-inst {
+        flex-direction: row;
+
+    }
+
+    .caja32-inst {
+        width: 250px;
+    }
+
+    .inst-foto-principal {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .caja1-inst {
+        text-align: center;
+    }
+
+    .caja12-inst {
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+
+    .caja12-inst,
+    .caja13-inst {
+        width: 50%;
+    }
+
+    .caja31-inst {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .inst-foto-principal {
+        width: 800px;
+        height: 400px;
+    }
+}

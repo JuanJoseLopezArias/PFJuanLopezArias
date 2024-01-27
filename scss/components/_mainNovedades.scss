@@ -1,0 +1,62 @@
+.main-novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-novedades {
+    width: 15rem;
+}
+
+.cajas-main-novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+    padding: 15px;
+}
+
+.caja12-main-novedades {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.h2-novedades {
+    text-align: center;
+    margin-top: 15px;
+    color: green;
+}
+
+.h1-novedades {
+    text-align: center;
+    color: rgb(0, 0, 255);
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
+    width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+
+
+    .img-novedades {
+        width: 400px;
+    }
+
+    .h1-novedades {
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .cajas-main-novedades {
+        flex-direction: row;
+
+    }
+
+    .contenido-main-novedades {
+        margin-left: 25px;
+    }
+
+    .img-novedades {
+        width: 300px;
+    }
+}
