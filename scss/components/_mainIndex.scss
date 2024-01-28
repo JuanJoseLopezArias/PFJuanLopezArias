@@ -33,6 +33,7 @@
         margin-top: 70px;
         z-index: -1;
         width: 100%;
+
         .encabezado-carousel {
             text-align: center;
             font-weight: 700;
@@ -52,7 +53,6 @@
     }
 
     .caja-zigzag {
-        background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         margin-top: 100px;
@@ -66,7 +66,7 @@
 
             .caja-texto-zigzag1 {
                 color: black;
-                padding: 0px 20px;
+                padding: 0px 5px;
                 max-width: 100%;
 
                 .fondo-txt-card-zigzag {
@@ -90,7 +90,6 @@
 
             .caja-img-zigzag1 {
                 display: flex;
-                max-width: 100%;
                 padding: 0px 25px 25px 25px;
                 justify-content: center;
 
@@ -127,22 +126,7 @@
     }
 }
 
-@media only screen and (min-width: 700px) {
-
-
-    .caja-img-zigzag1,
-    .caja-texto-zigzag1 {
-        width: 50%;
-    }
-
-
-
-    .zigzag2 {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-}
+@media only screen and (min-width: 700px) {}
 
 
 @media only screen and (min-width: 900px) {
@@ -161,21 +145,19 @@
         margin: 350px 60px 0px 60px;
 
         .caja-carousel {
-            padding: 0px 200px;
+            padding: 0px 50px;
 
             .encabezado-carousel {
                 text-align: center;
                 padding-bottom: 100px;
+                h2 {
+                    font-size: 2.5rem;
+                }
             }
         }
 
         .caja-zigzag {
-            margin-left: 100px;
-            margin-right: 100px;
-
-            .caja-texto-zigzag1 {
-                max-width: 50%;
-            }
+            flex-direction: row;
         }
 
 
@@ -185,11 +167,14 @@
                 width: 33%;
             }
         }
-
-
-
-
-
-
     }
+}
+
+@media only screen and (min-width: 1100px) {
+    .container-main {
+        .caja-carousel {
+            padding: 0px 105px;
+        }
+    }
+
 }

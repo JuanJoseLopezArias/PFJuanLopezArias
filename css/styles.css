@@ -67,7 +67,6 @@ header .tamaño-dropdown {
   background-color: rgba(0, 128, 0, 0.397);
 }
 .main-index .caja-zigzag {
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -81,7 +80,7 @@ header .tamaño-dropdown {
 }
 .main-index .caja-zigzag .zigzag .caja-texto-zigzag1 {
   color: black;
-  padding: 0px 20px;
+  padding: 0px 5px;
   max-width: 100%;
 }
 .main-index .caja-zigzag .zigzag .caja-texto-zigzag1 .fondo-txt-card-zigzag {
@@ -100,7 +99,6 @@ header .tamaño-dropdown {
 }
 .main-index .caja-zigzag .zigzag .caja-img-zigzag1 {
   display: flex;
-  max-width: 100%;
   padding: 0px 25px 25px 25px;
   justify-content: center;
 }
@@ -128,16 +126,6 @@ header .tamaño-dropdown {
     width: 450px;
   }
 }
-@media only screen and (min-width: 700px) {
-  .caja-img-zigzag1,
-  .caja-texto-zigzag1 {
-    width: 50%;
-  }
-  .zigzag2 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
 @media only screen and (min-width: 900px) {
   .container-encabezado {
     margin: 0px 104px;
@@ -151,21 +139,25 @@ header .tamaño-dropdown {
     margin: 350px 60px 0px 60px;
   }
   .container-main .caja-carousel {
-    padding: 0px 200px;
+    padding: 0px 50px;
   }
   .container-main .caja-carousel .encabezado-carousel {
     text-align: center;
     padding-bottom: 100px;
   }
-  .container-main .caja-zigzag {
-    margin-left: 100px;
-    margin-right: 100px;
+  .container-main .caja-carousel .encabezado-carousel h2 {
+    font-size: 2.5rem;
   }
-  .container-main .caja-zigzag .caja-texto-zigzag1 {
-    max-width: 50%;
+  .container-main .caja-zigzag {
+    flex-direction: row;
   }
   .container-main .caja-iframe iframe {
     width: 33%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .container-main .caja-carousel {
+    padding: 0px 105px;
   }
 }
 .txtdentrodeimagen {
