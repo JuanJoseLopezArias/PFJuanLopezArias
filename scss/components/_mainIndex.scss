@@ -96,7 +96,8 @@
                 img {
                     margin: 10px 0px;
                     border: 3px solid black;
-                    max-width: 100%;
+                    width: auto;
+                    max-height: 250px;
                 }
             }
 
@@ -122,7 +123,8 @@
 
 @media only screen and (min-width: 500px) {
     .img-zz {
-        width: 450px;
+        max-width: 100%;
+        min-height: 250px;
     }
 }
 
@@ -173,7 +175,7 @@
 @media only screen and (min-width: 1100px) {
     .container-main {
         .caja-carousel {
-            padding: 0px 105px;
+            padding: 0px 165px;
         }
     }
 
