@@ -2,158 +2,131 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.video-main-index {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+
 .main-index {
     margin-top: 140px;
 
+    .container-encabezado {
+        @extend %flex-column;
+        font-size: 1.1rem;
+
+        .caja-encabezado {
+            @include width-heigth (100%, auto);
+            padding: 10px 20px;
+        }
+    }
+
     .container-main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        @extend %flex-column;
 
-    .video-main-index {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: -2;
-    }
+        .caja-carousel {
+            margin-bottom: 40px;
+            margin-top: 70px;
+            @include width-heigth (100%, auto);
 
-    .caja-encabezado {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        font-size: 1.4rem;
-        padding: 10px 20px;
-    }
-
-    .caja-carousel {
-        margin-bottom: 40px;
-        margin-top: 70px;
-        z-index: -1;
-        width: 100%;
-
-        .encabezado-carousel {
-            text-align: center;
-            font-weight: 700;
-        }
-
-        .carousel-border {
-            border: 3px solid black;
-        }
-
-        .caja-txt-carousel {
-            height: 117px;
-            text-align: center;
-            color: rgb(255, 255, 255);
-            font-size: 1rem;
-            background-color: rgba(0, 128, 0, 0.397);
-        }
-    }
-
-    .caja-zigzag {
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-        text-align: center;
-        justify-content: center;
-        .zigzag {
-            background-color: nth($coloresMadera, 2);
-            color: black;
-            padding: 0px 5px;
-            margin: 5px 5px;
-            border-radius: 10%;
-            font-size: 1rem;
-            &:hover {
-                box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
+            .encabezado-carousel {
+                font-weight: 700;
             }
 
-            .caja-texto-zigzag1 {
-                h2 {
-                    margin: 20px;
-                }
-
-                p {
-                    padding: 0px 10px;
-                }
-            }
-        }
-
-        .caja-img-zigzag1 {
-            display: flex;
-            padding: 0px 25px 25px 25px;
-            justify-content: center;
-
-            img {
-                margin: 10px 0px;
+            .carousel-border {
                 border: 3px solid black;
-                width: 100%;
-                text-align: center;
+            }
+
+            .caja-txt-carousel {
+                @include width-heigth (auto, 117px);
+                color: rgb(255, 255, 255);
+                font-size: 1rem;
+                background-color: rgba(0, 128, 0, 0.397);
             }
         }
 
-    }
-}
+        .caja-zigzag {
+            margin-top: 100px;
 
-.caja-iframe {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    background-color: nth($coloresMadera,10);
-    padding: 30px;
-    width: 100%;
-    border-radius: 10%;
-    margin: 60px 10px;
+            .zigzag {
+                @extend %caja-contenido-1;
+                &:hover {
+                    box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
+                }
 
-    .caja-iframe-txt {
-        width: 100%;
-    }
-    .caja-iframe-img {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-around;
-        .iframe {
-            display: flex;
-            flex-direction: column;
-            padding: 5px;
-            align-items: center;
-            iframe {
-                width: 100%;
+                .caja-texto-zigzag1 {
+                    h2 {
+                        margin: 20px;
+                    }
+
+                    p {
+                        padding: 0px 10px;
+                    }
+                }
+            }
+
+            .caja-img-zigzag1 {
+                padding: 0px 25px 25px 25px;
+
+                img {
+                    margin: 10px 0px;
+                    border: 3px solid black;
+                    @include width-heigth (100%, auto);
+                }
+            }
+
+        }
+
+        .caja-iframe {
+            @extend %flex-column;
+            @extend %caja-contenido-2;
+            @include width-heigth (100%, auto);
+            margin-top: 30px;
+            
+
+            .caja-iframe-img {
+                
+                .iframe {
+                    padding: 5px;
+
+                    &:hover {
+                        font-size: 1.3rem;
+                    }
+
+                    iframe {
+                        @include width-heigth (100%, auto);
+                        border: 2px solid black;
+                    }
+                }
             }
         }
     }
 }
+
 
 
 @media only screen and (min-width: 500px) {
     .img-zz {
         max-width: 400px;
         min-height: 250px;
-    }    
-}
-
-@media only screen and (min-width: 700px) {
-    .caja-iframe {
-        .caja-iframe-img {
-            flex-direction: row;
-        }
     }
 }
 
+@media only screen and (min-width: 700px) {}
+
 
 @media only screen and (min-width: 900px) {
-    .container-encabezado {
-        margin: 0px 104px;
+    .main-index {
+        .container-encabezado {
+            margin: 0px 104px;
 
-        .caja-encabezado {
-            font-weight: 300;
-            font-size: 3.3rem;
+            .caja-encabezado {
+                font-weight: 300;
+                font-size: 2.3rem;
+            }
+
         }
-
     }
 
     .container-main {
@@ -174,12 +147,19 @@
         }
 
         .caja-zigzag {
+            display: flex;
             flex-direction: row;
         }
 
 
 
         .caja-iframe {
+            .caja-iframe-img {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
             iframe {
                 width: 33%;
             }

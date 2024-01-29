@@ -1,0 +1,42 @@
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+%caja-contenido-1 {
+    background-color: nth($coloresMadera, 2);
+    color: black;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    border-radius: 10%;
+    font-size: 1rem;
+    &:hover {
+        box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
+    }
+}
+
+%caja-contenido-2 {
+    background-color: nth($coloresMadera, 7);
+    color: black;
+    padding: 10px 10px;
+    margin: 5px 10px 30px 10px;
+    border-radius: 10%;
+    font-size: 1rem;
+    &:hover {
+        box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
+    }
+}
