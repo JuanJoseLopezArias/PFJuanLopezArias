@@ -229,7 +229,7 @@ header .tamaño-dropdown {
 .main-inst {
   margin-top: 110px;
   margin-bottom: 0px;
-  background-image: url(../../img/portada-institucional.jpg);
+  background-image: url(../img/portada-institucional.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -347,7 +347,7 @@ header .tamaño-dropdown {
 }
 .main-contacto {
   margin-top: 110px;
-  background-image: url(../../img/bg-contacto.jpg);
+  background-image: url(../img/bg-contacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
