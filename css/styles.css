@@ -360,6 +360,7 @@ header .tamaño-dropdown {
 }
 .main-contacto .formulario-main-contacto .item-form {
   padding: 10px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 500px) {
