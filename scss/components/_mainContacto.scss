@@ -1,0 +1,19 @@
+.main-contacto {
+    margin-top: 110px;
+    background-image: url(../../img/bg-contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    @extend %flex-column;
+    .encabezado-main-contacto {
+
+    }
+    .formulario-main-contacto {
+        @extend %caja-contenido-1;
+        margin-bottom: 50px;
+        .item-form {
+            @extend %flex-column;
+            padding: 10px;
+        }
+    }
+}
