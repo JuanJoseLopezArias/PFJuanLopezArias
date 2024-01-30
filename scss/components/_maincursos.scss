@@ -47,7 +47,9 @@
 
     .caja-contenido-cursos {
         @extend %caja-contenido-1;
-
+        .contenido-curso {
+            text-align: start;
+        }
     }
 
     .caja-valor-cursos {

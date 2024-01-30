@@ -3,17 +3,25 @@
     background-image: url(../../img/bg-contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    @include width-heigth (100%, auto);
     @extend %flex-column;
-    .encabezado-main-contacto {
-
-    }
     .formulario-main-contacto {
-        @extend %caja-contenido-1;
+        width: 100%;
         margin-bottom: 50px;
+        padding: 0px 30px;
+        @extend %caja-contenido-1;
+        
         .item-form {
             @extend %flex-column;
             padding: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .main-contacto {
+        .formulario-main-contacto {
+            width: 450px;
         }
     }
 }
