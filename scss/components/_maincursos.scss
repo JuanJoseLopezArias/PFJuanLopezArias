@@ -7,16 +7,17 @@
 
 .video-main-index2 {
     @extend %bgvideo;
-    width: 100%;
-    height: 105%;
-    margin: 0px;
+    
 }
 
 .main-cursos {
     margin-top: 140px;
     @extend %flex-column;
     .caja-presentacion-curso {
+        background-color: rgba(0, 0, 0, 0.486);
+        color: white;
         font-size: 1.2rem
+        
     }
     .encabezado-main-cursos {
         @extend %caja-contenido-1;
@@ -24,7 +25,7 @@
     }
     .caja-datos-curso {
         margin-top: 50px;
-        @extend %flex-row;
+        @extend %flex-column;
         width: 100%;
         .datos-curso {
             @extend %flex-column;
@@ -52,6 +53,15 @@
     .caja-valor-cursos {
         @extend %caja-contenido-2;
         width: 50%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .main-cursos {
+        .caja-datos-curso {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 }
 

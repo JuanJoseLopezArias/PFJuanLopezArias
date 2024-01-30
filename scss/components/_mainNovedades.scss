@@ -1,44 +1,46 @@
 .main-novedades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column;
+    margin-top: 110px;
+
+    h1 {
+        font-size: 2rem;
+        color: nth($coloresMadera, 3);
+    }
+
+    .cajas-main-novedades {
+        margin: 30px 0px;
+        padding: 15px;
+
+        img {
+            width: 15rem;
+            border: 3px solid black;
+            margin: 10px;
+        }
+
+        .contenido-main-novedades {
+            text-align: start;
+            padding: 10px;
+        }
+    }
+
+    .caja12-main-novedades {
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
 }
 
-.img-novedades {
-    width: 15rem;
-}
 
-.cajas-main-novedades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 0px;
-    padding: 15px;
-}
 
-.caja12-main-novedades {
-    border-bottom: 2px solid rgb(0, 0, 0);
-}
-
-.h2-novedades {
-    text-align: center;
-    margin-top: 15px;
-    color: green;
-}
-
-.h1-novedades {
-    text-align: center;
-    color: rgb(0, 0, 255);
-    border: 5px solid rgb(0, 0, 0);
-    background-color: rgb(211, 211, 211);
-    width: 100%;
-}
 
 @media only screen and (min-width: 500px) {
 
+    .main-novedades {
+        .cajas-main-novedades {
+            img {
+                width: 400px;
 
-    .img-novedades {
-        width: 400px;
+            }
+        }
     }
 
     .h1-novedades {
@@ -47,16 +49,17 @@
 }
 
 @media only screen and (min-width: 900px) {
-    .cajas-main-novedades {
-        flex-direction: row;
+    .main-novedades {
+        .cajas-main-novedades {
+            display: flex;
+            flex-direction: row;
+            img {
+                max-width: 300px;
+                max-height: 200px;
 
+            }
+        }
     }
-
-    .contenido-main-novedades {
-        margin-left: 25px;
-    }
-
-    .img-novedades {
-        width: 300px;
-    }
+    
 }
+

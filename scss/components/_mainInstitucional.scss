@@ -1,113 +1,233 @@
-.h-cursos,
-.h-inst {
-    color: #000069;
-    text-decoration: none;
-    text-align: center;
-    margin: 20px 0px;
-}
+.main-inst {
+    margin-top: 110px;
+    margin-bottom: 0px;
+    background-image: url(../../img/portada-institucional.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    @extend %flex-column;
 
-.caja-inst-foto-principal {
-    background-color: rgb(245, 245, 220);
-    display: flex;
-    justify-content: center;
-}
-
-.inst-foto-principal {
-    width: 280px;
-    height: 192px;
-}
-
-.caja1-inst {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-
-.caja12-inst,
-.caja13-inst {
-    padding: 0px 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-
-.caja2-inst {
-    background-color: rgb(211, 211, 211);
-    padding: 10px;
-}
-
-.caja3-inst {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    width: 100%;
-}
-
-.caja31-inst {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.caja32-inst {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ul-que-ofrecemos {
-    padding: 10px 10px;
-    margin: 10px 0px;
-}
-
-.img-que-ofrecemos {
-    width: 10rem;
-    margin: 10px 0px;
-}
-
-@media only screen and (min-width: 500px) {
-    .caja31-inst {
-        flex-direction: row;
-
+    .encabezado-main-inst {
+        @extend %caja-contenido-1;
+        margin-top: 40px;
+        background-color: nth($coloresMadera, 1);
+        color: rgb(255, 255, 255);
     }
 
-    .caja32-inst {
-        width: 250px;
-    }
-
-    .inst-foto-principal {
-        width: 450px;
-        height: 300px;
-    }
-}
-
-@media only screen and (min-width: 900px) {
     .caja1-inst {
-        text-align: center;
+        .caja1-txt-inst {
+            @extend %caja-contenido-2;
+        }
     }
 
-    .caja12-inst {
-        border-right: 3px solid rgb(0, 0, 0);
+    .caja2-inst {
+        @extend %caja-contenido-1;
+
+        h2 {
+            text-align: center;
+        }
+
+        .caja2-ul-inst {
+            .caja2-ulul-inst {
+                text-align: start;
+            }
+        }
+
+
     }
 
-    .caja12-inst,
-    .caja13-inst {
-        width: 50%;
-    }
+    .caja3-inst {
+        margin-top: 20px;
 
-    .caja31-inst {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+        .encabezado-caja3-inst {
+            @extend %caja-contenido-2;
+            background-color: nth($coloresMadera, 1);
+            color: rgb(255, 255, 255);
+        }
 
-    .inst-foto-principal {
-        width: 800px;
-        height: 400px;
+        .caja-img-ul-inst {
+            .caja-img-inst {
+
+                .img-que-ofrecemos,
+                .img-que-ofrecemos2 {
+                    width: 7rem;
+                    margin-bottom: 20px;
+                }
+
+                .img-que-ofrecemos2 {
+                    border-radius: 100%;
+                }
+            }
+
+            .caja-ul-inst {
+
+                text-align: start;
+                padding: 30px;
+                margin-bottom: 20px;
+                @extend %caja-contenido-1;
+
+            }
+        }
     }
 }
+
+
+@media only screen and (min-width: 700px) {
+    .main-inst {
+        .caja1-inst {
+            display: flex;
+            flex-direction: row;
+
+            .caja1-txt-inst {
+                width: 50%;
+            }
+        }
+
+        .caja2-inst {
+            .caja2-ul-inst {
+                display: flex;
+                flex-direction: row;
+
+                .caja2-ultxt-inst,
+                .caja2-ulul-inst {
+                    width: 50%;
+                    padding: 30px 30px 10px 30px;
+                }
+
+                .caja2-ulul-inst {
+                    text-align: start;
+                }
+            }
+        }
+
+        .caja3-inst {
+            .encabezado-caja3-inst {
+                margin: 50px 200px 50px 200px;
+            }
+
+            .box-img-ul-inst {
+                display: flex;
+                flex-direction: row;
+
+                .caja-img-ul-inst {
+                    width: 33%;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+}
+
+// .h-cursos,
+// .h-inst {
+//     color: #000069;
+//     text-decoration: none;
+//     text-align: center;
+//     margin: 20px 0px;
+// }
+
+// .caja-inst-foto-principal {
+//     background-color: rgb(245, 245, 220);
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .inst-foto-principal {
+//     width: 280px;
+//     height: 192px;
+// }
+
+// .caja1-inst {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     padding: 20px 0;
+// }
+
+// .caja12-inst,
+// .caja13-inst {
+//     padding: 0px 10px;
+//     margin-top: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+
+// }
+
+// .caja2-inst {
+//     background-color: rgb(211, 211, 211);
+//     padding: 10px;
+// }
+
+// .caja3-inst {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     padding: 10px;
+//     width: 100%;
+// }
+
+// .caja31-inst {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
+
+// .caja32-inst {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .ul-que-ofrecemos {
+//     padding: 10px 10px;
+//     margin: 10px 0px;
+// }
+
+// .img-que-ofrecemos {
+//     width: 10rem;
+//     margin: 10px 0px;
+// }
+
+// @media only screen and (min-width: 500px) {
+//     .caja31-inst {
+//         flex-direction: row;
+
+//     }
+
+//     .caja32-inst {
+//         width: 250px;
+//     }
+
+//     .inst-foto-principal {
+//         width: 450px;
+//         height: 300px;
+//     }
+// }
+
+// @media only screen and (min-width: 900px) {
+//     .caja1-inst {
+//         text-align: center;
+//     }
+
+//     .caja12-inst {
+//         border-right: 3px solid rgb(0, 0, 0);
+//     }
+
+//     .caja12-inst,
+//     .caja13-inst {
+//         width: 50%;
+//     }
+
+//     .caja31-inst {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-around;
+//     }
+
+//     .inst-foto-principal {
+//         width: 800px;
+//         height: 400px;
+//     }
+// }
