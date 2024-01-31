@@ -1,52 +1,104 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 .video-main-index {
     @extend %bgvideo;
 }
 
 .video-main-index2 {
     @extend %bgvideo;
-    
+
 }
 
 .main-cursos {
     margin-top: 140px;
     @extend %flex-column;
+
     .caja-presentacion-curso {
         background-color: rgba(0, 0, 0, 0.486);
         color: white;
         font-size: 1.2rem
-        
     }
+
     .encabezado-main-cursos {
         @extend %caja-contenido-1;
         margin-top: 20px;
     }
+
     .caja-datos-curso {
         margin-top: 50px;
         @extend %flex-column;
         width: 100%;
+
         .datos-curso {
             @extend %flex-column;
 
             .datos-txt-cursos {
                 @extend %caja-contenido-2;
-                
+
             }
-            
+
             .datos-img-cursos {
                 img {
                     width: 10rem;
                     border-radius: 50%;
+
+                    &:hover {
+                        @include keyframes(girar_icono) {
+                            10% {
+                                transform: rotate(36deg);
+                            }
+                        
+                            20% {
+                                transform: rotate(72deg);
+                            }
+                        
+                            30% {
+                                transform: rotate(108deg);
+                            }
+                        
+                            40% {
+                                transform: rotate(144deg);
+                            }
+                        
+                            50% {
+                                transform: rotate(180deg);
+                            }
+                        
+                            60% {
+                                transform: rotate(216deg);
+                            }
+                        
+                            70% {
+                                transform: rotate(252deg);
+                            }
+                        
+                            80% {
+                                transform: rotate(288deg);
+                            }
+                        
+                            90% {
+                                transform: rotate(324deg);
+                            }
+                        
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        @include animate(girar_icono, 5s, ease-in, 1);
+                    }
+
                 }
-                
+
             }
         }
     }
 
     .caja-contenido-cursos {
         @extend %caja-contenido-1;
+
         .contenido-curso {
             text-align: start;
         }
@@ -74,12 +126,22 @@
             padding: 0px 100px;
             width: 100%;
         }
+
         .encabezado-main-cursos {
             margin-left: 80px;
             margin-right: 80px;
+
             .sobre-este-curso {
                 padding: 10px 30px;
             }
         }
+
+        .caja-valor-cursos {
+            @include width-heigth (200px, 200px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }
+

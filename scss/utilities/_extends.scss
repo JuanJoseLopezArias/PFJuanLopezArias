@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     text-align: center;
     align-content: center;
+    justify-content: center;
 }
 
 %flex-row {
@@ -45,6 +46,7 @@
     }
 }
 
+
 %bgvideo {
     position: fixed;
     left: 0;
@@ -56,6 +58,6 @@
     transition: 0.4s;
 
     &:hover {
-        transform: scale(1.05)
+        transform: scale(1.05);
     }
 }

@@ -10,7 +10,11 @@ header {
     width: 100%;
     top: 0;
     z-index: 2;
-
+    .nav-item {
+        &:hover {
+            background-color: rgba(128, 128, 128, 0.315);
+        }
+    }
     .logo {
         width: 6rem;
     }

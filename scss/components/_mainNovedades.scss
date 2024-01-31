@@ -20,6 +20,10 @@
         .contenido-main-novedades {
             text-align: start;
             padding: 10px;
+            .link-novedades {
+                @extend %transition-transform;
+                margin-top: 40px;
+            }
         }
     }
 

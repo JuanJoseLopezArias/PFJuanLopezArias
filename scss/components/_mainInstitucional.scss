@@ -4,6 +4,8 @@
     background-image: url(../img/portada-institucional.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 100%;
     @extend %flex-column;
 
@@ -52,6 +54,12 @@
                 .img-que-ofrecemos2 {
                     width: 7rem;
                     margin-bottom: 20px;
+                    &:hover {
+                        animation-name: girar_icono;
+                        animation-timing-function: ease-in;
+                        animation-duration: 5s;
+                    }
+
                 }
 
                 .img-que-ofrecemos2 {
@@ -120,9 +128,29 @@
 
 @media only screen and (min-width: 700px) {
     .main-inst {
-        
+
         .separacion-minw-900px {
             margin: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .main-inst {
+        .caja1-inst {
+
+            margin: 50px 100px;
+
+        }
+
+        .separacion-minw-900px {
+            margin: 50px 200px;
+        }
+
+        .caja3-inst {
+            .encabezado-caja3-inst {
+                margin: 50px 250px 50px 250px;
+            }
         }
     }
 }

@@ -12,7 +12,7 @@
         width: 100%;
         margin-bottom: 50px;
         padding: 0px 30px;
-        @extend %caja-contenido-1;
+        @extend %caja-contenido-2;
         
         .item-form {
             @extend %flex-column;
