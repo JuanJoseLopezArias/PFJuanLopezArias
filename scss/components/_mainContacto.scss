@@ -5,6 +5,9 @@
     background-size: cover;
     @include width-heigth (100%, auto);
     @extend %flex-column;
+    .encabezado-main-contacto {
+        margin: 0px 10px;
+    }
     .formulario-main-contacto {
         width: 100%;
         margin-bottom: 50px;
@@ -15,6 +18,9 @@
             @extend %flex-column;
             padding: 10px;
             width: 100%;
+            textarea {
+                width: 100%;
+            }
         }
     }
 }

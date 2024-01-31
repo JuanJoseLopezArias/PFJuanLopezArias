@@ -47,7 +47,9 @@
             margin-top: 100px;
 
             .zigzag {
+                @extend %transition-transform;
                 @extend %caja-contenido-1;
+
                 &:hover {
                     box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
                 }
@@ -70,6 +72,7 @@
                     margin: 10px 0px;
                     border: 3px solid black;
                     @include width-heigth (100%, auto);
+                    align-items: flex-end;
                 }
             }
 
@@ -80,23 +83,57 @@
             @extend %caja-contenido-2;
             @include width-heigth (100%, auto);
             margin-top: 30px;
-            
+
 
             .caja-iframe-img {
-                
+
                 .iframe {
                     padding: 5px;
 
-                    &:hover {
-                        font-size: 1.3rem;
-                    }
-
                     iframe {
+                        @extend %transition-transform;
                         @include width-heigth (100%, auto);
                         border: 2px solid black;
                     }
                 }
             }
+        }
+
+        .caja-referencias {
+            @extend %flex-column;
+            @extend %caja-contenido-2;
+            background-color: white;
+            width: 100%;
+
+            .caja-txt-refencias {
+                margin-top: 10px;
+            }
+
+            .caja-img-referencias {
+                @extend %flex-row;
+            }
+
+            .logos-referencias {
+                width: 15rem;
+                padding: 20px
+            }
+
+        }
+
+        .zigzag2 {
+            @extend %flex-row;
+
+            .caja-texto-zigzag2 {
+                @extend %caja-contenido-2;
+                background-color: nth($coloresMadera, 5);
+                @extend %flex-column;
+                .zigzag2-link {
+                    @extend %transition-transform;
+                    color: nth($coloresMadera, 1);
+                }
+            }
+
+
         }
     }
 }
@@ -106,7 +143,7 @@
 @media only screen and (min-width: 500px) {
     .img-zz {
         max-width: 400px;
-        min-height: 250px;
+        max-height: 220px;
     }
 }
 
@@ -114,6 +151,17 @@
 
 
 @media only screen and (min-width: 900px) {
+    .img-zz {
+        min-width: 220px;
+        min-height: 170px;
+        align-items: end;
+
+    }
+
+    .caja-texto-zigzag2 {
+        width: 30%;
+    }
+
     .main-index {
         .container-encabezado {
             margin: 0px 104px;
@@ -152,6 +200,7 @@
 
         .caja-iframe {
             .caja-iframe-img {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
