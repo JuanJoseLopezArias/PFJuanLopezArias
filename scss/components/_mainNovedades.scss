@@ -21,6 +21,7 @@
         .contenido-main-novedades {
             text-align: start;
             padding: 10px;
+
             .link-novedades {
                 @extend %transition-transform;
                 margin-top: 40px;
@@ -58,6 +59,7 @@
         .cajas-main-novedades {
             display: flex;
             flex-direction: row;
+
             img {
                 min-width: 300px;
                 max-height: 200px;
@@ -65,6 +67,5 @@
             }
         }
     }
-    
-}
 
+}

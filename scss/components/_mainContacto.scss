@@ -6,19 +6,22 @@
     @include width-heigth (100%, auto);
     @extend %flex-column;
     min-height: 100vh;
+
     .encabezado-main-contacto {
         margin: 0px 10px;
     }
+
     .formulario-main-contacto {
         width: 100%;
         margin-bottom: 50px;
         padding: 0px 30px;
         @extend %caja-contenido-2;
-        
+
         .item-form {
             @extend %flex-column;
             padding: 10px;
             width: 100%;
+
             textarea {
                 width: 100%;
             }

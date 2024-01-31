@@ -61,10 +61,6 @@
   transform: scale(1.05);
 }
 
-* {
-  font-family: "Poppins", sans-serif;
-}
-
 header {
   background-color: #9bcfb8;
   border: 1px solid rgb(0, 0, 0);
@@ -82,10 +78,6 @@ header .logo {
 }
 header .tamaño-dropdown {
   font-size: 0.8rem;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
 }
 
 .main-index {
@@ -497,10 +489,6 @@ header .tamaño-dropdown {
     width: 450px;
   }
 }
-* {
-  font-family: "Poppins", sans-serif;
-}
-
 footer {
   background-color: #ece2c6;
 }
@@ -545,6 +533,10 @@ footer {
 }
 body {
   min-height: 100vh;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
