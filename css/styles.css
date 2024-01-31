@@ -90,6 +90,7 @@ header .tamaño-dropdown {
 
 .main-index {
   margin-top: 140px;
+  min-height: 100vh;
 }
 .main-index .container-encabezado {
   font-size: 1.1rem;
