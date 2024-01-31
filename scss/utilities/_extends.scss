@@ -5,7 +5,8 @@
     flex-wrap: wrap;
     text-align: center;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
+    
 }
 
 %flex-row {
@@ -52,6 +53,9 @@
     left: 0;
     top: 0;
     z-index: -2;
+    min-width: 100%;
+    min-height: 100vh;
+    
 }
 
 %transition-transform {

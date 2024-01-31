@@ -14,6 +14,7 @@
 .main-cursos {
     margin-top: 140px;
     @extend %flex-column;
+    min-height: 100vh;
 
     .caja-presentacion-curso {
         background-color: rgba(0, 0, 0, 0.486);

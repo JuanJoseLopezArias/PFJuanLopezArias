@@ -1,6 +1,7 @@
 .main-novedades {
     @extend %flex-column;
     margin-top: 110px;
+    min-height: 100vh;
 
     h1 {
         font-size: 2rem;

@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   text-align: center;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
@@ -50,6 +50,8 @@
   left: 0;
   top: 0;
   z-index: -2;
+  min-width: 100%;
+  min-height: 100vh;
 }
 
 .main-novedades .cajas-main-novedades .contenido-main-novedades .link-novedades, .main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe, .main-index .container-main .caja-zigzag .zigzag {
@@ -233,6 +235,7 @@ header .tamaño-dropdown {
 
 .main-cursos {
   margin-top: 140px;
+  min-height: 100vh;
 }
 .main-cursos .caja-presentacion-curso {
   background-color: rgba(0, 0, 0, 0.486);
@@ -327,7 +330,7 @@ header .tamaño-dropdown {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100%;
+  min-height: 100vh;
 }
 .main-inst .encabezado-main-inst {
   margin-top: 40px;
@@ -417,6 +420,7 @@ header .tamaño-dropdown {
 }
 .main-novedades {
   margin-top: 110px;
+  min-height: 100vh;
 }
 .main-novedades h1 {
   font-size: 2rem;
@@ -467,6 +471,7 @@ header .tamaño-dropdown {
   background-size: cover;
   width: 100%;
   height: auto;
+  min-height: 100vh;
 }
 .main-contacto .encabezado-main-contacto {
   margin: 0px 10px;
@@ -534,6 +539,9 @@ footer {
   .footer-row .cajafooter {
     width: 33%;
   }
+}
+body {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
