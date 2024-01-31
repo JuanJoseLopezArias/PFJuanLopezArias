@@ -13,14 +13,12 @@
     .container-encabezado {
         @extend %flex-column;
         font-size: 1.1rem;
-        
+
 
         .caja-encabezado {
             @include width-heigth (100%, auto);
             padding: 10px 20px;
-            p {
-                font-weight: 700;
-            }
+            text-shadow: 0px 1px 7px white;
         }
     }
 
@@ -34,6 +32,7 @@
 
             .encabezado-carousel {
                 font-weight: 700;
+                text-shadow: 0px 1px 7px white;
             }
 
             .carousel-border {
@@ -41,7 +40,7 @@
             }
 
             .caja-txt-carousel {
-                @include width-heigth (auto, 117px);
+                @include width-heigth (auto, auto);
                 color: rgb(255, 255, 255);
                 font-size: 1rem;
                 background-color: rgba(0, 128, 0, 0.397);
@@ -133,6 +132,7 @@
                 @extend %caja-contenido-2;
                 background-color: nth($coloresMadera, 5);
                 @extend %flex-column;
+
                 .zigzag2-link {
                     @extend %transition-transform;
                     color: nth($coloresMadera, 1);
@@ -173,57 +173,69 @@
             margin: 0px 104px;
 
             .caja-encabezado {
-                font-weight: 300;
                 font-size: 2.3rem;
+                padding-top: 100px;
             }
 
         }
     }
 
-    .container-main {
-        font-size: 2rem;
-        margin: 350px 30px 0px 30px;
+    .main-index {
+        .container-main {
+            font-size: 2rem;
+            margin: 350px 30px 0px 30px;
 
-        .caja-carousel {
-            padding: 0px 50px;
+            .caja-carousel {
+                padding: 0px 50px;
 
-            .encabezado-carousel {
-                text-align: center;
-                padding-bottom: 100px;
+                .encabezado-carousel {
+                    text-align: center;
+                    
 
-                h2 {
-                    font-size: 2.5rem;
+                    h2 {
+                        font-size: 2.5rem;
+
+                    }
+                }
+
+                .caja-txt-carousel {
+                    font-size: 2rem;
+                }
+            }
+
+            .caja-zigzag {
+                display: flex;
+                flex-direction: row;
+            }
+
+
+
+            .caja-iframe {
+                .caja-iframe-img {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                iframe {
+                    width: 33%;
                 }
             }
         }
-
-        .caja-zigzag {
-            display: flex;
-            flex-direction: row;
-        }
-
-
-
-        .caja-iframe {
-            .caja-iframe-img {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            iframe {
-                width: 33%;
-            }
-        }
     }
-}
 
-@media only screen and (min-width: 1100px) {
-    .container-main {
-        .caja-carousel {
-            padding: 0px 165px;
+    @media only screen and (min-width: 1100px) {
+        .main-index {
+            .container-main {
+                .caja-carousel {
+                    padding: 0px 165px;
+                    margin-top: 155px;
+                }
+            }
         }
+        
+
     }
 
 }

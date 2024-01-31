@@ -99,9 +99,7 @@ header .tamaño-dropdown {
   width: 100%;
   height: auto;
   padding: 10px 20px;
-}
-.main-index .container-encabezado .caja-encabezado p {
-  font-weight: 700;
+  text-shadow: 0px 1px 7px white;
 }
 .main-index .container-main .caja-carousel {
   margin-bottom: 40px;
@@ -111,13 +109,14 @@ header .tamaño-dropdown {
 }
 .main-index .container-main .caja-carousel .encabezado-carousel {
   font-weight: 700;
+  text-shadow: 0px 1px 7px white;
 }
 .main-index .container-main .caja-carousel .carousel-border {
   border: 3px solid black;
 }
 .main-index .container-main .caja-carousel .caja-txt-carousel {
   width: auto;
-  height: 117px;
+  height: auto;
   color: rgb(255, 255, 255);
   font-size: 1rem;
   background-color: rgba(0, 128, 0, 0.397);
@@ -194,40 +193,43 @@ header .tamaño-dropdown {
     margin: 0px 104px;
   }
   .main-index .container-encabezado .caja-encabezado {
-    font-weight: 300;
     font-size: 2.3rem;
+    padding-top: 100px;
   }
-  .container-main {
+  .main-index .container-main {
     font-size: 2rem;
     margin: 350px 30px 0px 30px;
   }
-  .container-main .caja-carousel {
+  .main-index .container-main .caja-carousel {
     padding: 0px 50px;
   }
-  .container-main .caja-carousel .encabezado-carousel {
+  .main-index .container-main .caja-carousel .encabezado-carousel {
     text-align: center;
-    padding-bottom: 100px;
   }
-  .container-main .caja-carousel .encabezado-carousel h2 {
+  .main-index .container-main .caja-carousel .encabezado-carousel h2 {
     font-size: 2.5rem;
   }
-  .container-main .caja-zigzag {
+  .main-index .container-main .caja-carousel .caja-txt-carousel {
+    font-size: 2rem;
+  }
+  .main-index .container-main .caja-zigzag {
     display: flex;
     flex-direction: row;
   }
-  .container-main .caja-iframe .caja-iframe-img {
+  .main-index .container-main .caja-iframe .caja-iframe-img {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .container-main .caja-iframe iframe {
+  .main-index .container-main .caja-iframe iframe {
     width: 33%;
   }
 }
-@media only screen and (min-width: 1100px) {
-  .container-main .caja-carousel {
+@media only screen and (min-width: 900px) and (min-width: 1100px) {
+  .main-index .container-main .caja-carousel {
     padding: 0px 165px;
+    margin-top: 155px;
   }
 }
 * {
