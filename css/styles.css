@@ -97,6 +97,9 @@ header .tamaño-dropdown {
   height: auto;
   padding: 10px 20px;
 }
+.main-index .container-encabezado .caja-encabezado p {
+  font-weight: 700;
+}
 .main-index .container-main .caja-carousel {
   margin-bottom: 40px;
   margin-top: 70px;

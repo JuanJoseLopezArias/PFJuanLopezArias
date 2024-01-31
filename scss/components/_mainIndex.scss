@@ -12,10 +12,14 @@
     .container-encabezado {
         @extend %flex-column;
         font-size: 1.1rem;
+        
 
         .caja-encabezado {
             @include width-heigth (100%, auto);
             padding: 10px 20px;
+            p {
+                font-weight: 700;
+            }
         }
     }
 
