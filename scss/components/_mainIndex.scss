@@ -81,9 +81,7 @@
         .caja-iframe {
             @extend %flex-column;
             @extend %caja-contenido-2;
-            @include width-heigth (100%, auto);
-            margin-top: 30px;
-
+            margin: 60px 20px 0px 20px;
 
             .caja-iframe-img {
 
@@ -104,6 +102,7 @@
             @extend %caja-contenido-2;
             background-color: white;
             width: 80%;
+            margin-top: 60px;
 
             .caja-txt-refencias {
                 padding: 10px 0px;
@@ -122,7 +121,7 @@
 
         .zigzag2 {
             @extend %flex-row;
-
+            margin-top: 60px;
             .caja-texto-zigzag2 {
                 @extend %transition-transform;
                 @extend %caja-contenido-2;
@@ -154,10 +153,7 @@
 
 @media only screen and (min-width: 900px) {
     .img-zz {
-        min-width: 220px;
         min-height: 170px;
-        align-items: end;
-
     }
 
     .caja-texto-zigzag2 {

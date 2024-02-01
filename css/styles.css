@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.main-contacto .formulario-main-contacto .item-form, .main-contacto, .main-novedades, .main-inst, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
+.main-contacto .formulario-main-contacto .item-form, .main-contacto, .main-novedades, .main-inst .caja3-inst, .main-inst, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,9 +136,7 @@ header .tamaño-dropdown {
   align-items: flex-end;
 }
 .main-index .container-main .caja-iframe {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
+  margin: 60px 20px 0px 20px;
 }
 .main-index .container-main .caja-iframe .caja-iframe-img .iframe {
   padding: 5px;
@@ -151,6 +149,7 @@ header .tamaño-dropdown {
 .main-index .container-main .caja-referencias {
   background-color: white;
   width: 80%;
+  margin-top: 60px;
 }
 .main-index .container-main .caja-referencias .caja-txt-refencias {
   padding: 10px 0px;
@@ -158,6 +157,9 @@ header .tamaño-dropdown {
 .main-index .container-main .caja-referencias .logos-referencias {
   width: 11rem;
   padding: 10px 5px;
+}
+.main-index .container-main .zigzag2 {
+  margin-top: 60px;
 }
 .main-index .container-main .zigzag2 .caja-texto-zigzag2 {
   background-color: #d5ac67;
@@ -174,9 +176,7 @@ header .tamaño-dropdown {
 }
 @media only screen and (min-width: 900px) {
   .img-zz {
-    min-width: 220px;
     min-height: 170px;
-    align-items: end;
   }
   .caja-texto-zigzag2 {
     width: 30%;
@@ -410,7 +410,7 @@ header .tamaño-dropdown {
     margin: 50px 200px;
   }
   .main-inst .caja3-inst .encabezado-caja3-inst {
-    margin: 50px 250px 50px 250px;
+    width: 400px;
   }
 }
 .main-novedades {
