@@ -57,9 +57,7 @@
                     margin-bottom: 20px;
 
                     &:hover {
-                        animation-name: girar_icono;
-                        animation-timing-function: ease-in;
-                        animation-duration: 5s;
+                        @extend %headshake;
                     }
 
                 }

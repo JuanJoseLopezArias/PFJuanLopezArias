@@ -186,7 +186,7 @@ header .tamaño-dropdown {
   }
   .main-index .container-encabezado .caja-encabezado {
     font-size: 2.3rem;
-    padding-top: 100px;
+    padding-top: 30px;
   }
   .main-index .container-main {
     font-size: 2rem;
@@ -247,41 +247,6 @@ header .tamaño-dropdown {
 .main-cursos .caja-datos-curso .datos-curso .datos-img-cursos img {
   width: 10rem;
   border-radius: 50%;
-}
-.main-cursos .caja-datos-curso .datos-curso .datos-img-cursos img:hover {
-  animation: girar_icono 5s ease-in 1;
-}
-@keyframes girar_icono {
-  10% {
-    transform: rotate(36deg);
-  }
-  20% {
-    transform: rotate(72deg);
-  }
-  30% {
-    transform: rotate(108deg);
-  }
-  40% {
-    transform: rotate(144deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  60% {
-    transform: rotate(216deg);
-  }
-  70% {
-    transform: rotate(252deg);
-  }
-  80% {
-    transform: rotate(288deg);
-  }
-  90% {
-    transform: rotate(324deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .main-cursos .caja-contenido-cursos .contenido-curso {
   text-align: start;
@@ -349,12 +314,6 @@ header .tamaño-dropdown {
 .main-inst .caja3-inst .caja-img-ul-inst .caja-img-inst .img-que-ofrecemos2 {
   width: 7rem;
   margin-bottom: 20px;
-}
-.main-inst .caja3-inst .caja-img-ul-inst .caja-img-inst .img-que-ofrecemos:hover,
-.main-inst .caja3-inst .caja-img-ul-inst .caja-img-inst .img-que-ofrecemos2:hover {
-  animation-name: girar_icono;
-  animation-timing-function: ease-in;
-  animation-duration: 5s;
 }
 .main-inst .caja3-inst .caja-img-ul-inst .caja-img-inst .img-que-ofrecemos2 {
   border-radius: 100%;
@@ -537,6 +496,31 @@ body {
 
 * {
   font-family: "Poppins", sans-serif;
+}
+
+.main-cursos .caja-datos-curso .datos-curso .datos-img-cursos img:hover, .main-inst .caja3-inst .caja-img-ul-inst .caja-img-inst .img-que-ofrecemos:hover,
+.main-inst .caja3-inst .caja-img-ul-inst .caja-img-inst .img-que-ofrecemos2:hover {
+  animation: headshake_icono 0.5s ease-in 1;
+}
+@keyframes headshake_icono {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(-6px) rotateY(-9deg) skewY(1deg);
+  }
+  37.5% {
+    transform: translateX(5px) rotateY(4.5deg) skewY(-1deg);
+  }
+  62.5% {
+    transform: translateX(-3px) rotateY(-2.25deg) skewY(0);
+  }
+  87.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
