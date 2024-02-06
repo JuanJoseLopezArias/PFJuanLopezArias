@@ -57,10 +57,28 @@
 
     .caja-contenido-cursos {
         @extend %caja-contenido-1;
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        .titulo-contenido-cursos {
+            font-size: 2rem;
+        }
 
         .contenido-curso {
             text-align: start;
         }
+    }
+
+    .container-acordeon {
+        width: 290px;
+        z-index: 1;
+        margin-bottom: 50px;
+
+        .acordeon {
+            border-radius: 100%;
+            background-color: black;
+        }
+
     }
 
     .caja-valor-cursos {
@@ -76,6 +94,14 @@
             justify-content: space-around;
         }
     }
+
+    .main-cursos {
+        .container-acordeon {
+            width: 480px;
+            z-index: 1;
+        }
+    }
+
 }
 
 @media only screen and (min-width: 700px) {

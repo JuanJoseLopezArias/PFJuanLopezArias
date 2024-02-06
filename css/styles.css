@@ -248,8 +248,24 @@ header .tamaño-dropdown {
   width: 10rem;
   border-radius: 50%;
 }
+.main-cursos .caja-contenido-cursos {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.main-cursos .caja-contenido-cursos .titulo-contenido-cursos {
+  font-size: 2rem;
+}
 .main-cursos .caja-contenido-cursos .contenido-curso {
   text-align: start;
+}
+.main-cursos .container-acordeon {
+  width: 290px;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+.main-cursos .container-acordeon .acordeon {
+  border-radius: 100%;
+  background-color: black;
 }
 .main-cursos .caja-valor-cursos {
   width: 50%;
@@ -259,6 +275,10 @@ header .tamaño-dropdown {
   .main-cursos .caja-datos-curso {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .main-cursos .container-acordeon {
+    width: 480px;
+    z-index: 1;
   }
 }
 @media only screen and (min-width: 700px) {
