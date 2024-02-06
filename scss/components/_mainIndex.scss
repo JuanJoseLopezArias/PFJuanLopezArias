@@ -20,6 +20,7 @@
 
     .container-main {
         @extend %flex-column;
+        margin: 0px 10px;
 
         .caja-carousel {
             margin-bottom: 40px;

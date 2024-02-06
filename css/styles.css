@@ -93,6 +93,9 @@ header .tamaño-dropdown {
   padding: 10px 20px;
   text-shadow: 0px 1px 7px white;
 }
+.main-index .container-main {
+  margin: 0px 10px;
+}
 .main-index .container-main .caja-carousel {
   margin-bottom: 40px;
   margin-top: 70px;
