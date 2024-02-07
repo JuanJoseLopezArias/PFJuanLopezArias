@@ -27,3 +27,22 @@
     
     @include animate(headshake_icono, 0.5s, ease-in, 1);
 }
+
+%zoomin {
+    @include keyframes(zoomin) {
+        0% {
+          scale: 30%;
+          opacity: 0;
+        }
+        50% {
+          scale: 60%;
+          opacity: 0.8;
+        }
+        100% {
+          scale: 100%;
+          opacity: 1;
+        }
+      }
+
+      @include animate(zoomin, 0.5s, ease-in, 1);
+}

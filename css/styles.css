@@ -33,7 +33,7 @@
   transform: scale(1.1);
 }
 
-.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-inst .caja3-inst .encabezado-caja3-inst, .main-inst .caja1-inst .caja1-txt-inst, .main-cursos .caja-valor-cursos, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
+.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-inst .caja3-inst .encabezado-caja3-inst, .main-inst .caja1-inst .caja1-txt-inst, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
   background-color: #9e9e9e;
   color: black;
   padding: 10px 10px;
@@ -41,7 +41,7 @@
   border-radius: 10%;
   font-size: 1rem;
 }
-.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-inst .caja3-inst .encabezado-caja3-inst:hover, .main-inst .caja1-inst .caja1-txt-inst:hover, .main-cursos .caja-valor-cursos:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
+.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-inst .caja3-inst .encabezado-caja3-inst:hover, .main-inst .caja1-inst .caja1-txt-inst:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
   box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
 }
 
@@ -122,8 +122,10 @@ header .tamaño-dropdown {
   width: auto;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
   background-color: rgba(0, 128, 0, 0.397);
+}
+.main-index .container-main .caja-carousel .caja-txt-carousel h2 {
+  font-size: 0.8rem;
 }
 .main-index .container-main .caja-zigzag {
   margin-top: 100px;
@@ -185,6 +187,9 @@ header .tamaño-dropdown {
     max-width: 400px;
     max-height: 220px;
   }
+  .main-index .container-main .caja-carousel .caja-txt-carousel h2 {
+    font-size: 2rem;
+  }
 }
 @media only screen and (min-width: 900px) {
   .img-zz {
@@ -213,9 +218,6 @@ header .tamaño-dropdown {
   .main-index .container-main .caja-carousel .encabezado-carousel h2 {
     font-size: 2.5rem;
   }
-  .main-index .container-main .caja-carousel .caja-txt-carousel {
-    font-size: 2rem;
-  }
   .main-index .container-main .caja-zigzag {
     display: flex;
     flex-direction: row;
@@ -232,7 +234,7 @@ header .tamaño-dropdown {
 }
 @media only screen and (min-width: 900px) and (min-width: 1100px) {
   .main-index .container-main .caja-carousel {
-    padding: 0px 165px;
+    padding: 0px 195px;
     margin-top: 155px;
   }
 }
@@ -270,17 +272,55 @@ header .tamaño-dropdown {
 .main-cursos .caja-contenido-cursos .contenido-curso {
   text-align: start;
 }
-.main-cursos .container-acordeon {
-  width: 290px;
+.main-cursos .caja-acordeon {
   z-index: 1;
+}
+.main-cursos .caja-acordeon .container-acordeon {
+  width: 290px;
   margin-bottom: 50px;
 }
-.main-cursos .container-acordeon .acordeon {
+.main-cursos .caja-acordeon .container-acordeon .acordeon {
   border-radius: 100%;
   background-color: black;
 }
 .main-cursos .caja-valor-cursos {
-  width: 50%;
+  text-align: center;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin-bottom: 100px;
+}
+.main-cursos .caja-valor-cursos .flip-valor-cursos {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.main-cursos .caja-valor-cursos .flip-valor-cursos:hover {
+  transform: rotateY(180deg);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-front-valor-cursos,
+.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-back-valor-cursos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding-top: 60px;
+}
+.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-front-valor-cursos {
+  background-color: #bbb;
+  color: black;
+}
+.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-back-valor-cursos {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 0.6rem;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -288,7 +328,7 @@ header .tamaño-dropdown {
     flex-direction: row;
     justify-content: space-around;
   }
-  .main-cursos .container-acordeon {
+  .main-cursos .caja-acordeon .container-acordeon {
     width: 480px;
     z-index: 1;
   }
@@ -577,6 +617,21 @@ body {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    scale: 30%;
+    opacity: 0;
+  }
+  50% {
+    scale: 60%;
+    opacity: 0.8;
+  }
+  100% {
+    scale: 100%;
+    opacity: 1;
   }
 }
 

@@ -39,8 +39,12 @@
             .caja-txt-carousel {
                 @include width-heigth (auto, auto);
                 color: rgb(255, 255, 255);
-                font-size: 1rem;
+
                 background-color: rgba(0, 128, 0, 0.397);
+
+                h2 {
+                    font-size: .8rem;
+                }
             }
         }
 
@@ -123,6 +127,7 @@
         .zigzag2 {
             @extend %flex-row;
             margin-top: 60px;
+
             .caja-texto-zigzag2 {
                 @extend %transition-transform;
                 @extend %caja-contenido-2;
@@ -147,6 +152,21 @@
         max-width: 400px;
         max-height: 220px;
     }
+
+    .main-index {
+        .container-main {
+            .caja-carousel {
+                .caja-txt-carousel {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }
 
 @media only screen and (min-width: 700px) {}
@@ -190,10 +210,6 @@
 
                     }
                 }
-
-                .caja-txt-carousel {
-                    font-size: 2rem;
-                }
             }
 
             .caja-zigzag {
@@ -222,7 +238,7 @@
         .main-index {
             .container-main {
                 .caja-carousel {
-                    padding: 0px 165px;
+                    padding: 0px 195px;
                     margin-top: 155px;
                 }
             }
