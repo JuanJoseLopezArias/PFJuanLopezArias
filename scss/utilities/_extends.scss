@@ -6,7 +6,7 @@
     text-align: center;
     align-content: center;
     justify-content: flex-start;
-    
+
 }
 
 %flex-row {
@@ -55,7 +55,7 @@
     z-index: -2;
     min-width: 100%;
     min-height: 100vh;
-    
+
 }
 
 %transition-transform {
@@ -64,4 +64,14 @@
     &:hover {
         transform: scale(1.05);
     }
+}
+
+%efectoformulariocontacto {
+    font-size: 1.1em;
+    background-color: #ddd;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    
 }

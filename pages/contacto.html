@@ -64,40 +64,57 @@
   </header>
 
   <main class="main-contacto">
-    <div class="encabezado-main-contacto">
-      <h1 class="h1-contacto">Formulario de contacto</h1>
-      <p class="p-contacto">Escribinos y en breve nos pondremos en contacto contigo</p>
+    <div class="caja-main-contacto">
+      <div class="encabezado-main-contacto">
+        <h1 class="h1-contacto">Conéctate con Nosotros: ¡Envíanos un Mensaje!</h1>
+        <p class="p-contacto">¡Estamos aquí para escucharte! Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible. Ya sea que tengas preguntas, comentarios o sugerencias, ¡esperamos con ansias tu mensaje!</p>
+      </div>
+      <div class="caja-formulario">
+        <form class="formulario-main-contacto">
+          <div class="formulario-row">
+            <div class="formulario-row-column">
+              <div class="item-form">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre" id="nombre">
+              </div>
+              <div class="item-form">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Escribe tu email" id="email">
+              </div>
+            </div>
+            <div class="formulario-row-column">
+              <div class="item-form">
+                <label for="telefono">Telefono</label>
+                <input type="text" placeholder="Escribe tu telefono" id="telefono">
+              </div>
+              <div class="item-form">
+                <label for="asunto">Asunto</label>
+                <input type="text" placeholder="Escribe el asunto" id="asunto">
+              </div>
+            </div>
+          </div>
+          <div class="formulario-msj-button">
+            <div class="item-form">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" class="text-area"></textarea>
+            </div>
+            <div class="item-form">
+              <label for="checkbox">Aceptas nuestros terminos</label>
+              <input type="checkbox" value="" id="checkbox" class="checkbox">
+            </div>
+            <div class="item-form">
+              <label for="submit"></label>
+              <input type="submit" value="Enviar formulario" id="submit">
+            </div>
+          </div>
+          
+         
+          
+        </form>
+      </div>
     </div>
-    <form class="formulario-main-contacto">
-      <div class="item-form">
-        <label for="nombre">Nombre</label>
-        <input type="text" placeholder="Escribe tu nombre" id="nombre">
-      </div>
-      <div class="item-form">
-        <label for="email">Email</label>
-        <input type="text" placeholder="Escribe tu email" id="email">
-      </div>
-      <div class="item-form">
-        <label for="telefono">Telefono</label>
-        <input type="text" placeholder="Escribe tu telefono" id="telefono">
-      </div>
-      <div class="item-form">
-        <label for="asunto">Asunto</label>
-        <input type="text" placeholder="Escribe el asunto" id="asunto">
-      </div>
-      <div class="item-form">
-        <label for="mensaje">Mensaje</label>
-        <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-      </div>
-      <div class="item-form">
-        <label for="checkbox">Aceptas nuestros terminos</label>
-        <input type="checkbox" value="" id="checkbox" class="checkbox">
-      </div>
-      <div class="item-form">
-        <label for="submit"></label>
-        <input type="submit" value="Enviar formulario" id="submit">
-      </div>
-    </form>
+    
+    
   </main>
 
   <footer>
