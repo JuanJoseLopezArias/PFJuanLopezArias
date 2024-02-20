@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-novedades, .main-inst .caja3-inst, .main-inst, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
+.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-novedades .margin-caja-noticias .caja-noticias, .main-inst .caja3-inst, .main-inst, .main-cursos .caja-acordeon, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   justify-content: flex-start;
 }
 
-.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
+.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,7 +38,7 @@
   color: black;
   padding: 10px 10px;
   margin: 5px 10px 30px 10px;
-  border-radius: 10%;
+  border-radius: 5%;
   font-size: 1rem;
 }
 .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-inst .caja3-inst .encabezado-caja3-inst:hover, .main-inst .caja1-inst .caja1-txt-inst:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
@@ -54,10 +54,10 @@
   min-height: 100vh;
 }
 
-.main-novedades .cajas-main-novedades .contenido-main-novedades .link-novedades, .main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe, .main-index .container-main .caja-zigzag .zigzag {
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades .link-novedades, .main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias .logos-referencias:hover, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe, .main-index .container-main .caja-zigzag .zigzag {
   transition: 0.4s;
 }
-.main-novedades .cajas-main-novedades .contenido-main-novedades .link-novedades:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe:hover, .main-index .container-main .caja-zigzag .zigzag:hover {
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades .link-novedades:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias .logos-referencias:hover, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe:hover, .main-index .container-main .caja-zigzag .zigzag:hover {
   transform: scale(1.05);
 }
 
@@ -165,8 +165,8 @@ header .tamaño-dropdown {
   width: 80%;
   margin-top: 60px;
 }
-.main-index .container-main .caja-referencias .caja-txt-refencias {
-  padding: 10px 0px;
+.main-index .container-main .caja-referencias .txt-caja-referencias {
+  padding-bottom: 20px;
 }
 .main-index .container-main .caja-referencias .logos-referencias {
   width: 11rem;
@@ -283,6 +283,9 @@ header .tamaño-dropdown {
   border-radius: 100%;
   background-color: black;
 }
+.main-cursos .caja-acordeon .container-acordeon .acordeon .txt-acordeon {
+  text-align: start;
+}
 .main-cursos .caja-valor-cursos {
   text-align: center;
   background-color: transparent;
@@ -291,19 +294,20 @@ header .tamaño-dropdown {
   perspective: 1000px;
   margin-bottom: 100px;
 }
-.main-cursos .caja-valor-cursos .flip-valor-cursos {
+.main-cursos .caja-valor-cursos .flip-valor-cursos, .main-cursos .caja-valor-cursos .caja-valor-cursos {
   position: relative;
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.main-cursos .caja-valor-cursos .flip-valor-cursos:hover {
+.main-cursos .caja-valor-cursos .flip-valor-cursos:hover, .main-cursos .caja-valor-cursos .caja-valor-cursos:hover {
   transform: rotateY(180deg);
   box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 .main-cursos .caja-valor-cursos .flip-valor-cursos .flip-front-valor-cursos,
-.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-back-valor-cursos {
+.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-back-valor-cursos, .main-cursos .caja-valor-cursos .caja-valor-cursos .flip-front-valor-cursos,
+.main-cursos .caja-valor-cursos .caja-valor-cursos .flip-back-valor-cursos {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -311,11 +315,11 @@ header .tamaño-dropdown {
   backface-visibility: hidden;
   padding-top: 60px;
 }
-.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-front-valor-cursos {
+.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-front-valor-cursos, .main-cursos .caja-valor-cursos .caja-valor-cursos .flip-front-valor-cursos {
   background-color: #bbb;
   color: black;
 }
-.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-back-valor-cursos {
+.main-cursos .caja-valor-cursos .flip-valor-cursos .flip-back-valor-cursos, .main-cursos .caja-valor-cursos .caja-valor-cursos .flip-back-valor-cursos {
   background-color: #555;
   color: white;
   transform: rotateY(180deg);
@@ -445,49 +449,91 @@ header .tamaño-dropdown {
   }
 }
 .main-novedades {
+  background-color: rgba(128, 128, 128, 0.568);
   margin-top: 110px;
-  min-height: 100vh;
+}
+.main-novedades a {
+  color: black;
 }
 .main-novedades h1 {
   font-size: 2rem;
-  color: #808000;
+  color: #ece2c6;
+  padding-top: 20px;
+  text-align: center;
 }
-.main-novedades .cajas-main-novedades {
-  margin: 30px 0px;
-  padding: 15px;
+.main-novedades .margin-caja-noticias {
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.main-novedades .cajas-main-novedades img {
-  width: 15rem;
+.main-novedades .margin-caja-noticias .caja-noticias {
+  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades {
+  align-items: flex-start;
+}
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-img-noticias {
+  width: 40%;
+  float: left;
+  padding: 15px 5px 15px 10px;
+}
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades:hover {
+  opacity: 0.7;
+}
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-txt-noticias {
+  line-height: 1.33;
+  width: 60%;
+  float: right;
+  padding: 15px 5px 15px 10px;
+  text-align: left;
+}
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-txt-noticias .rubro {
+  border-left: 3px solid black;
+  padding-left: 10px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades img {
+  width: 100%;
   border: 3px solid black;
-  margin: 10px;
+  height: 100%;
 }
-.main-novedades .cajas-main-novedades .contenido-main-novedades {
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades {
   text-align: start;
   padding: 10px;
 }
-.main-novedades .cajas-main-novedades .contenido-main-novedades .link-novedades {
+.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades .link-novedades {
   margin-top: 40px;
 }
-.main-novedades .caja12-main-novedades {
+.main-novedades .margin-caja-noticias .caja-noticias .caja12-main-novedades {
   border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-@media only screen and (min-width: 500px) {
-  .main-novedades .cajas-main-novedades img {
-    width: 400px;
-  }
-  .h1-novedades {
-    width: 450px;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .main-novedades .cajas-main-novedades {
-    display: flex;
+@media only screen and (min-width: 750px) {
+  .main-novedades .margin-caja-noticias .caja-noticias {
     flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .main-novedades .cajas-main-novedades img {
-    min-width: 300px;
-    max-height: 200px;
+  .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 10px;
+  }
+  .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-img-noticias {
+    width: 100%;
+  }
+  .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-txt-noticias {
+    width: 100%;
+  }
+  .main-novedades .margin-caja-noticias .caja-noticias .caja12-main-novedades {
+    border-bottom: none;
+  }
+  .main-novedades a {
+    width: 25%;
   }
 }
 .main-contacto {

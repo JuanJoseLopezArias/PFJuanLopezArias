@@ -109,8 +109,8 @@
             width: 80%;
             margin-top: 60px;
 
-            .caja-txt-refencias {
-                padding: 10px 0px;
+            .txt-caja-referencias {
+                padding-bottom: 20px;
             }
 
             .caja-img-referencias {
@@ -120,6 +120,9 @@
             .logos-referencias {
                 width: 11rem;
                 padding: 10px 5px;
+                &:hover {
+                    @extend %transition-transform;
+                }
             }
 
         }
