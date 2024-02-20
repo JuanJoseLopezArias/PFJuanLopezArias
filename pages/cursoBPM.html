@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso BPM</title>
+  <title>Curso BPM - UAN </title>
   <!-- Link bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Link Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Link de fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +18,15 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <!-- Link de css -->
   <link rel="stylesheet" href="../css/styles.css">
+  <!-- Link AOS Js-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="keywords"
+    content="Cursos intensivos, Nutricion animal, Formulacion de alimentos, Cursos de BPM, Cereales, Perito clasificador de granos">
+  <meta name="description"
+    content="Descubre cursos intensivos en nutrición animal y su industria. Potencia tu carrera con conocimientos clave en un sector crucial. ¡Inscríbete ya!">
+  <meta name="author" content="Juan José López Arias">
+  <meta name="telephone" content="+9 3444-582795">
 </head>
 
 <body>
@@ -40,10 +51,13 @@
                 Cursos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item tamaño-dropdown" href="cursoPeritos.html">Perito clasificador de granos</a></li>
-                <li><a class="dropdown-item tamaño-dropdown" href="cursoFormulacion.html">Formulación alimentos balanceados</a>
+                <li><a class="dropdown-item tamaño-dropdown" href="cursoPeritos.html">Perito clasificador de granos</a>
                 </li>
-                <li><a class="dropdown-item tamaño-dropdown" href="cursoBPM.html">Buenas practicas de Manufactura</a></li>
+                <li><a class="dropdown-item tamaño-dropdown" href="cursoFormulacion.html">Formulación alimentos
+                    balanceados</a>
+                </li>
+                <li><a class="dropdown-item tamaño-dropdown" href="cursoBPM.html">Buenas practicas de Manufactura</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -126,112 +140,142 @@
         <div class="accordion acordeon rounded-pill" id="accordionFlushExample">
           <div class="accordion-item item-acordeon ">
             <h2 class="accordion-header rounded-pill ">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 Analitica 1 - Visteo práctico
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Se desarrollan estrategias que permitan, previa interpretación de las normas de comercialización, reconocer las distintas calidades de los cereales y oleaginosas. El estudiante adquirirá las competencias necesarias para la realización de análisis comerciales de cereales, oleaginosas y legumbres.
-    
-                  Los estudiantes además podrán distinguir sensorialmente si una mercadería es apta para el recibo o rechazo. Tarea fundamental en el recibo de granos de toda planta de almacenaje.</p>
+                <p>Se desarrollan estrategias que permitan, previa interpretación de las normas de comercialización,
+                  reconocer las distintas calidades de los cereales y oleaginosas. El estudiante adquirirá las
+                  competencias necesarias para la realización de análisis comerciales de cereales, oleaginosas y
+                  legumbres.
+
+                  Los estudiantes además podrán distinguir sensorialmente si una mercadería es apta para el recibo o
+                  rechazo. Tarea fundamental en el recibo de granos de toda planta de almacenaje.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 Analitica 2 - Practicas de laboratorio
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Forma profesionales para desempeñarse eficazmente en el laboratorio de granos, utilizando diferentes elementos y métodos físicos-químicos que permiten analizar la calidad de los distintos cereales, oleaginosas, legumbres y subproductos.</p>
+                <p>Forma profesionales para desempeñarse eficazmente en el laboratorio de granos, utilizando diferentes
+                  elementos y métodos físicos-químicos que permiten analizar la calidad de los distintos cereales,
+                  oleaginosas, legumbres y subproductos.</p>
               </div>
             </div>
           </div>
-  
+
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 Producción y cultivo
               </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Introduce al panorama productivo general, distribución e importancia de los distintos granos que existen en nuestro país. Se estudia el proceso de industrialización de los diferentes granos como maíz, trigo, cebada, arroz, proceso de obtención de aceite, de selección del maní y del poroto, con el análisis específico de cada proceso.</p>
+                <p>Introduce al panorama productivo general, distribución e importancia de los distintos granos que
+                  existen en nuestro país. Se estudia el proceso de industrialización de los diferentes granos como
+                  maíz, trigo, cebada, arroz, proceso de obtención de aceite, de selección del maní y del poroto, con el
+                  análisis específico de cada proceso.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
                 Mercado de granos
               </button>
             </h2>
             <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Brinda herramientas que permiten entender el mercado granario: como está constituida la cadena comercial granaria, las funciones de las Bolsas de Cereales y Cámaras Arbitrales. Los distintos instrumentos de créditos existentes, así como las formas de operar y contratos en el mercado disponible y en el mercado de futuros.</p>
+                <p>Brinda herramientas que permiten entender el mercado granario: como está constituida la cadena
+                  comercial granaria, las funciones de las Bolsas de Cereales y Cámaras Arbitrales. Los distintos
+                  instrumentos de créditos existentes, así como las formas de operar y contratos en el mercado
+                  disponible y en el mercado de futuros.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
                 Recibo y almacenamiento de granos
               </button>
             </h2>
             <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Se reconocen los procesos e instalaciones de una planta de acopio, industria o puerto para comprender su funcionamiento y operar en ellas correctamente. Además, forma al estudiante en el recibo de granos, actividad fundamental para el funcionamiento correcto de la cadena comercial.</p>
+                <p>Se reconocen los procesos e instalaciones de una planta de acopio, industria o puerto para comprender
+                  su funcionamiento y operar en ellas correctamente. Además, forma al estudiante en el recibo de granos,
+                  actividad fundamental para el funcionamiento correcto de la cadena comercial.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
                 Conservacion de granos
               </button>
             </h2>
             <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>El objetivo es el manejo de las variables físicas, químicas y biológicas, tanto de los granos como del medio ambiente. Interrelacionando estas variables correctamente se logran competencias para el acondicionamiento de granos, logrando un almacenamiento prolongado y seguro.
-  
-                  En esta materia se desarrollan las técnicas de secado, aireación, termometría y control de plagas, fundamentales para una buena conservación.</p>
+                <p>El objetivo es el manejo de las variables físicas, químicas y biológicas, tanto de los granos como
+                  del medio ambiente. Interrelacionando estas variables correctamente se logran competencias para el
+                  acondicionamiento de granos, logrando un almacenamiento prolongado y seguro.
+
+                  En esta materia se desarrollan las técnicas de secado, aireación, termometría y control de plagas,
+                  fundamentales para una buena conservación.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
                 Liquidación y calculo
               </button>
             </h2>
             <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Tiene como finalidad interpretar las normas de comercialización de granos. Pudiendo además liquidar cereales, oleaginosas y legumbres, llenando los formularios necesarios para su comercialización. El estudiante en esta materia adquirirá los conocimientos para la realización de mezclas, cubicajes y control de stock en plantas de almacenamiento de granos.</p>
+                <p>Tiene como finalidad interpretar las normas de comercialización de granos. Pudiendo además liquidar
+                  cereales, oleaginosas y legumbres, llenando los formularios necesarios para su comercialización. El
+                  estudiante en esta materia adquirirá los conocimientos para la realización de mezclas, cubicajes y
+                  control de stock en plantas de almacenamiento de granos.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseThree">
-               Tipificación
+              <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseThree">
+                Tipificación
               </button>
             </h2>
             <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Tiene como objetivo permitir la correcta observación morfológica de los diferentes granos y semillas que se cultivan. Entre lo más importante, variedades de trigo pan, cebada, avena, maíz, arroz, maní, poroto, malezas y pasturas.</p>
+                <p>Tiene como objetivo permitir la correcta observación morfológica de los diferentes granos y semillas
+                  que se cultivan. Entre lo más importante, variedades de trigo pan, cebada, avena, maíz, arroz, maní,
+                  poroto, malezas y pasturas.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
       <!--Fin acordeon Bootstrap -->
-  
+
     </div>
-    
+
     <div id="valor" class="caja-valor-cursos ">
       <div class="flip-valor-cursos">
         <div class="flip-front-valor-cursos">
@@ -278,9 +322,15 @@
       </div>
     </div>
   </footer>
+  <!--Script BS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <!-- Script AOS Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
