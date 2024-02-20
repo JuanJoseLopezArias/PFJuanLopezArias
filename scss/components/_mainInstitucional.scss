@@ -1,7 +1,7 @@
 .main-inst {
     margin-top: 110px;
     margin-bottom: 0px;
-    background-image: url(../img/portada-institucional.jpg);
+    background-image: url(../../img/img-institucional1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,6 +20,8 @@
     .caja1-inst {
         .caja1-txt-inst {
             @extend %caja-contenido-2;
+            background-color: rgb(255, 255, 255);
+        
         }
     }
 
@@ -116,6 +118,8 @@
             .box-img-ul-inst {
                 display: flex;
                 flex-direction: row;
+                padding-left: 50px;
+                padding-right: 50px;
 
                 .caja-img-ul-inst {
                     width: 33%;
