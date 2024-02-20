@@ -30,7 +30,7 @@
 }
 .main-inst .caja3-inst .caja-img-ul-inst .caja-ul-inst:hover, .main-inst .caja2-inst:hover, .main-inst .encabezado-main-inst:hover, .main-cursos .caja-contenido-cursos:hover, .main-cursos .encabezado-main-cursos:hover, .main-index .container-main .caja-zigzag .zigzag:hover {
   box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-inst .caja3-inst .encabezado-caja3-inst, .main-inst .caja1-inst .caja1-txt-inst, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
