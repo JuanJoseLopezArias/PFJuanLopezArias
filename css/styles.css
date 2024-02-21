@@ -530,6 +530,7 @@ header .tamaño-dropdown {
   .main-novedades .margin-caja-noticias {
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 20px;
   }
   .main-novedades .margin-caja-noticias .caja-noticias {
     flex-direction: row;
