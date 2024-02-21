@@ -72,7 +72,9 @@
     .caja-acordeon {
         z-index: 1;
         @extend %flex-column;
-
+        .caja-contenido-cursos {
+            margin: 20px;
+        }
         .container-acordeon {
             width: 290px;
             margin-bottom: 50px;

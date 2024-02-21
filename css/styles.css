@@ -275,6 +275,9 @@ header .tamaño-dropdown {
 .main-cursos .caja-acordeon {
   z-index: 1;
 }
+.main-cursos .caja-acordeon .caja-contenido-cursos {
+  margin: 20px;
+}
 .main-cursos .caja-acordeon .container-acordeon {
   width: 290px;
   margin-bottom: 50px;
