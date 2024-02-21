@@ -372,7 +372,7 @@ header .tamaño-dropdown {
   min-height: 100vh;
 }
 .main-inst .encabezado-main-inst {
-  margin-top: 40px;
+  margin: 40px;
   background-color: #2a5398;
   color: rgb(255, 255, 255);
 }
@@ -494,7 +494,7 @@ header .tamaño-dropdown {
   padding: 15px 5px 15px 10px;
 }
 .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-txt-noticias {
   line-height: 1.33;

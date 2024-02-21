@@ -12,7 +12,7 @@
 
     .encabezado-main-inst {
         @extend %caja-contenido-1;
-        margin-top: 40px;
+        margin: 40px;
         background-color: nth($coloresMadera, 1);
         color: rgb(255, 255, 255);
     }
