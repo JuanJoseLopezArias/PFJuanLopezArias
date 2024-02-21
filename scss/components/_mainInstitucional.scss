@@ -21,12 +21,13 @@
         .caja1-txt-inst {
             @extend %caja-contenido-2;
             background-color: rgb(255, 255, 255);
-        
+
         }
     }
 
     .caja2-inst {
         @extend %caja-contenido-1;
+        margin: 20px;
 
         h2 {
             text-align: center;
@@ -42,17 +43,21 @@
     }
 
     .caja3-inst {
-        margin-top: 20px;
+        margin: 20px;
         @extend %flex-column;
+
         .encabezado-caja3-inst {
             @extend %caja-contenido-2;
             background-color: nth($coloresMadera, 1);
             color: rgb(255, 255, 255);
         }
 
+        .box-img-ul-inst {
+            @extend %flex-column;
+            margin: 10px;
+        }
         .caja-img-ul-inst {
             .caja-img-inst {
-
                 .img-que-ofrecemos,
                 .img-que-ofrecemos2 {
                     width: 7rem;
@@ -117,14 +122,11 @@
 
             .box-img-ul-inst {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 padding-left: 50px;
                 padding-right: 50px;
 
-                .caja-img-ul-inst {
-                    width: 33%;
-                    margin: 15px;
-                }
+               
             }
         }
     }
@@ -156,5 +158,19 @@
                 width: 400px;
             }
         }
+        .caja3-inst {
+            .box-img-ul-inst {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding-left: 50px;
+                padding-right: 50px;
+    
+                .caja-img-ul-inst {
+                    width: 33%;
+                }
+            }
+        }
+        
     }
 }
